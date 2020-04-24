@@ -14,12 +14,17 @@ BOT_NAME = 'afca'
 SPIDER_MODULES = ['afca.spiders']
 NEWSPIDER_MODULE = 'afca.spiders'
 
+#from shutil import which
+
+#SELENIUM_DRIVER_NAME = 'chromedriver'
+#SELENIUM_DRIVER_EXECUTABLE_PATH = which('chromedriver')
+#SELENIUM_DRIVER_ARGUMENTS=['--headless']  # '--headless' if using chrome instead of firefox
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'afca (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -53,7 +58,7 @@ ROBOTSTXT_OBEY = True
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'afca.middlewares.AfcaDownloaderMiddleware': 543,
+#    'scrapy_selenium.SeleniumMiddleware': 800
 #}
 
 # Enable or disable extensions
