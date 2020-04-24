@@ -1,0 +1,6 @@
+*.pyc
+venv
+build
+dist
+docs/build
+chromedriver.exe
